@@ -55,31 +55,53 @@
             <!-- Your gueses so far -->
             <div class="col-md-3">
                 <h6 class="text-center">Your guesses so far:
-                    <span id="guessesSoFar"><strong></strong>
+                    <span id="gLet"><strong></strong>
                     </span>
                 </h6>
             </div>
         </div>
     </div>
     <script>
-        // computer options to chose
+    // computer options to chose
         var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-        // placeholder of arguments - to display
+    // placeholder of arguments - to display
         var wins = 0;
         var losses = 0;
         var guessesLeft = 9;
         var guessedLetters = [];
+        
+    // computer sings: user what letter I'm thinking of?? lalala
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-        // Function reset
+    // Function reset
         var reset = function() {
-        totalGuesses = 9;
-        guessesLeft = 9;
-        guessedLetters = [];
-        
-        // user guesses
-        
+            document.onekeyup=false;
+            totalGuesses = 0;
+            guessesLeft = 9;
+            guessedLetters = [];
+        }
 
+    var updateGuessesSoFar = function() {
+    // Here we take the guesses the user has tried -- then display it as letters separated by commas. 
+    document.querySelector('#gLet').innerHTML = " ," + guessedLetters.join(', ');
+    };
+
+    // Wins: (# of times the user has guessed the letter correctly)
+    document.onkeyup = function(event) {
+        
+    }
+
+    // Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+
+    // Guesses Left: (# of guesses left. This will update)
+
+    // Your Guessed letter: (the specific letters that the user typed. Display these until the user either wins or loses.)
+    //  MAKE A LOOP
+
+    // When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+
+    // When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
 
 
 
