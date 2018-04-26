@@ -1,9 +1,9 @@
 .container {
-    width: 700px;
-    height: 600px;
+    width: 750px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    padding-top: 25px;
     border: 3px dotted goldenrod;
     border-radius: 10px;
     margin-top: 50px;
