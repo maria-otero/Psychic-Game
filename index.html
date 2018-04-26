@@ -2,14 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <title>Psychic-Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Psychic Game</title>
+
 </head>
+
 <body>
-    
-    <script src="assets/javascript/game.js">
+    <div class="container">
+    <br><br>
+        <!-- row 1 -->
+        <div class="row">
+            <!-- flawer1 -->
+            <div class="col-sm">
+                <img src="assets/images/flower2.jpg" class="rounded float-right" alt="flower1">
+            </div>
+            <!-- title -->
+            <div class="col-sm">
+                <h2 class="text-info text-center">Tropica Psychic Game</h2>
+                <p class="text-center"><em>Guess what letter I'm thinking of...</em></p>
+            </div>
+            <!-- flower2 -->
+            <div class="col-sm">
+                <img src="assets/images/flower1.jpg" class="rounded float-left" alt="flower1">
+            </div>         
+        </div>
+
+        <!-- row2 -->
+        <div class="row">
+            <!-- wins -->
+            <div class="col-md-3">
+                <h6 class="text-center">Wins: 
+                    <span id="wins"><strong></strong>
+                    </span>
+                </h6>
+            </div>
+            <!-- losses -->
+            <div class="col-md-3">
+                <h6 class="text-center">Losses:  
+                    <span id="losses"><strong></strong>
+                    </span>
+                </h6>
+            </div>
+            <!-- guesses left -->
+            <div class="col-md-3">
+                <h6 class="text-center">Guesses Left:  
+                    <span id="guessesLeft"><strong></strong>
+                    </span>
+                </h6>
+            </div>
+            <!-- Your gueses so far -->
+            <div class="col-md-3">
+                <h6 class="text-center">Your guesses so far:
+                    <span id="guessesSoFar"><strong></strong>
+                    </span>
+                </h6>
+            </div>
+        </div>
+    </div>
+    <script>
+        // computer options to chose
+        var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+        // placeholder of arguments - to display
+        var wins = 0;
+        var losses = 0;
+        var guessesLeft = 9;
+        var guessedLetters = [];
+
+        // Function reset
+        var reset = function() {
+        totalGuesses = 9;
+        guessesLeft = 9;
+        guessedLetters = [];
+        
+        // user guesses
+        
+
+
+
+
     </script>
 </body>
+
 </html>
